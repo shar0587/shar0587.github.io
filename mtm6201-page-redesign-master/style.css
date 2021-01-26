@@ -1,0 +1,94 @@
+/* Nav bar responsiveness & styling; I chose these settings
+to make it look better, and to respond better when changing
+screen size */
+nav#nav {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    max-width: 1160px;
+    margin: 0px auto;
+    background-color: rgb(255, 173, 163);
+    border: 5px solid darkgrey;
+    padding-right: 0;
+}
+
+/* Gives the link buttons a consistent black color
+when clicking instead of purple */
+.nav a {
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+/* Cleaner font styling throughout page (with the
+exception of the cursive section for now) */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Specifically for the cursive home section, overrides
+the styling to be replaced with new font */
+h1,
+section.home p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Matches the primary text color black,
+instead of white which makes it hard to see */
+h2,
+section.about p {
+    color: black;
+}
+
+/* Follows the pink color theme aesthetic */
+section#home {
+    background-color: rgb(255, 194, 194);
+}
+
+section#about {
+    background-color: rgb(253, 207, 207);
+}
+
+section#contact {
+    background-color: rgb(255, 218, 218);
+}
+
+/* Increases size of h1 / h2 headings to better suit webpage */
+h1.page-title {
+    font-size: 56px;
+    position: relative;
+}
+
+
+h2.section-title {
+    font-size: 56px;
+    position: relative;
+}
+
+/* Matches the font size of the other paragraphs; the contact form
+section font size was very small in comparison */
+section.contact p {
+    font-size: 28px;
+}
+
+/* I changed the contact form color to match the
+rest of the web page */
+form.contact-form {
+    background-color: rgb(255, 194, 194);
+}
+
+/* Media query added to make contact form more
+  responsive and not bleed off screen when changing screen
+  size. */
+@media screen and (max-width: 694px) {
+    form.contact-form {
+        width: 200px;
+    }
+
+    /* Media query added to make nav bar more
+  responsive and not bleed off screen when changing screen
+  size. */
+    @media screen and (max-width: 1920px) {
+        nav#nav {
+            width: auto;
+            text-justify: auto;
+        }
