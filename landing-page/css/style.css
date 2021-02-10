@@ -1,0 +1,399 @@
+/* MOBILE-FIRST; 0px to 768px */
+
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+/* Used 'overflow-x: hidden' to disable horizontal scroll,
+as it's not necessary for Mobile + Tablet version */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Sets the background color */
+body {
+    background-color: #f7f7ff;
+}
+
+/* Split most of page into different styling parts to
+accomodate mockup (ex: bold for "Want to be your own boss", etc) */
+.banner-info h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #333131;
+    line-height: 1.2;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Stylizes the second line below the "Want to be your own boss"; the reason
+for this is to not have the bold font weight that the above has */
+.banner-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Dash logo styling for the top right */
+.logo img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding-left: 30px;
+}
+
+/* Aligns scooter image to center */
+.scooter img {
+    max-width: 768px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+/* Apply Now Form */ 
+.apply-form {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: #fff;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* This changes the placeholder font family in the input field; by default it is a different
+font family */
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* The following lines of code stylizes the 'Apply Now' form. */
+
+/* Styling for the 'Apply Now' text, which requires a bold font weight */
+.apply-form h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #333131;
+    padding: 10px;
+}
+
+/* Unlike the 'Apply Now' text, the 'Enter your info below' text does not require
+a bold font weight. Styling still included */
+.apply-form h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+/* Montserrat font added, plus line spacing in between lines */
+.apply-form p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    padding: 10px;
+}
+
+/* 'Drive With Us' button styling. Used custom class in HTML */
+.drivewithus-btn {
+    background-color: #57eeab;
+    border-radius: 10px;
+    color: #333131;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    border: none;
+}
+
+/* Stylizes the input fields (i.e: First name, last name, etc) to closely resemble
+mockup */
+.input-box {
+    background-color: #f7f7ff;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px auto;
+    width: 250px;
+    border: none;
+    outline: none;
+}
+
+/* Removes the default link color/underline to match mockup */
+a {
+    color: #ff8480;
+    text-decoration: none;
+}
+
+/* The following lines of code stylizes the footer */
+footer {
+    background-color: #fffd8c;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+/* First line (See how much you can earn with Dash) again requires bold font weight */
+footer h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+/* Second line (how many hours do you want to drive...) does not require bold font weight */
+footer h2 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+/* Footer input fields required different sizing, so I stylized each individual input field */
+.footer-input-box1 {
+    background-color: #f7f7ff;
+    border-radius: 10px;
+    margin: 5px auto;
+    font-size: 16px;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+/* Footer input fields required different sizing, so I stylized each individual input field */
+.footer-input-box2 {
+    background-color: #f7f7ff;
+    border-radius: 10px;
+    margin: 5px auto;
+    font-size: 16px;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+
+.calculate-btn {
+    background-color: #ff8480;
+    border-radius: 10px;
+    color: #f7f7ff;
+    width: 350px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+/* Adds space in between the social media icons by using span */
+.footer-logos span + span {
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+
+/* Media queries for screen sizes follows, which displays different versions of
+the landing page for 3 different screen sizes: Mobile, Tablet, and
+for Desktop. Mobile styling is the styling foundation for the rest of the page, 
+which means the following styling are readjustments to fit different screens */
+
+/* Media Query for Tablet sizes (from 768px to 1199px) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-info h1 {
+        font-size: 100px;
+        padding-right: 500px;
+        padding-bottom: 20px;
+    }
+
+    .banner-info p {
+        font-size: 25px;
+        line-height: 1.3;
+    }
+
+    .scooter img {
+        width: 450px;
+        height: auto;
+    }
+
+    .apply-form {
+        zoom: 2;
+    }
+
+    .apply-form h1 {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .apply-form h2 {
+        font-size: 18px;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .input-box {
+        border-radius: 5px;
+        width: 275px;
+    }
+
+    .apply-form p {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .drivewithus-btn {
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 5px;
+        width: 275px;
+    }
+
+    /* This changes the checkbox size to be bigger; width and height primarily adjusts the size,
+    the rest are for style */
+    input[type='checkbox'] {
+        width: 20px;
+        height: 30px;
+        background: white;
+        border-radius: 5px;
+        border: 1px solid #000;
+        vertical-align: middle;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer h1, footer h2 {
+        max-width: 1200px;
+        width: 100%;
+        font-size: 20px;
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .footer-input-box1 {
+        width: 200px;
+    }
+
+    .footer-input-box2 {
+        width: 400px;
+    }
+
+    .calculate-btn {
+        padding: 5px;
+    }
+}
+
+/* Media Query for Desktop sizes (1199px and beyond) */
+@media screen and (min-width: 1199px) {
+    html, body {
+        max-width: 100%;
+        max-height: 1080px;
+    }
+    
+    .container {
+        max-width: 1920px;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-info h1 {
+        font-size: 75px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .scooter img {
+        width: 700px;
+        height: 500px
+    }
+
+    .apply-form {
+        zoom: 1.3;
+        position: fixed;
+        right: 50px;
+        bottom: 150px;
+    }
+
+    .apply-form h1 {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .apply-form h2 {
+        font-size: 18px;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .input-box {
+        border-radius: 5px;
+        width: 275px;
+    }
+
+    .apply-form p {
+        font-size: 10.5px;
+        text-align: left;
+    }
+
+    .drivewithus-btn {
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 5px;
+        width: 275px;
+    }
+
+    input[type='checkbox'] {
+        width: 20px;
+        height: 30px;
+        background: white;
+        border-radius: 5px;
+        border: 1px solid #000;
+        vertical-align: middle;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer h1, footer h2 {
+        max-width: 1200px;
+        width: 100%;
+        font-size: 20px;
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .footer-input-box1 {
+        width: 200px;
+    }
+
+    .footer-input-box2 {
+        width: 400px;
+    }
+
+    .calculate-btn {
+        padding: 5px;
+    }
+}
