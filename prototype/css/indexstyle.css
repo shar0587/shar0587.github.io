@@ -1,0 +1,175 @@
+/* This imports a Google Font family for use in the document */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Mobile First Approach (0px to 768px) */
+html, body {
+    font-family: 'Manrope', sans-serif;
+    background-image: linear-gradient(to bottom,#cb6ce6, #7a92ff,#00abff,#00baed,#a1a1a1);
+}
+
+header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 90px;
+    padding: 0 40px;
+}
+.logo img {
+    padding: 10px;
+    float: left;
+    padding-right: 80px;
+}
+
+header .menu ul {
+    display: flex;
+}
+
+header .menu li a {
+    font-size: .8rem;
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+#home {
+    height: calc(100vh - 90px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .banner-info {
+    width: 100%;
+    padding-left: 50px;
+    float: left;
+}
+
+#home .banner-info h1 {
+    font-size: 5.5rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 3rem;
+    padding-right: 25px;
+    text-align: center;
+}
+
+#home .banner-info h4 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    line-height: 25px;
+    padding-right: 24px;
+}
+
+#home .banner-info .call-action {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.action-btn, .action-ghost-btn {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px 20px;
+    border-radius: 30px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* Hover animation used in white button only */
+.action-btn {
+    background: white;
+    color: #cb6ce6;
+    margin-right: 20px;
+    transition: all 0.3s;
+}
+
+.action-btn:hover {
+    background: #cb6ce6;
+    color: white;
+}
+
+.action-ghost-btn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.banner-photo img {
+    opacity: 0%;
+    float: left;
+    width: 80%;
+}
+
+/* Media Query for Tablet sizings; main purpose is for the letters and
+image to respond to the different size */
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+
+    #home .banner-info h1 {
+        font-size: 4.5rem;
+        font-weight: 900;
+        color: white;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    
+    #home .banner-info h4 {
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: white;
+        margin-bottom: 2rem;
+        letter-spacing: 2px;
+        line-height: 25px;
+        padding-right: 24px;
+    }
+
+    .banner-photo img {
+        width: 80%;
+        height: auto;
+        opacity: 100%;
+    }
+}
+
+/* Media Query for Desktop sizings; main purpose is for the letters and
+image to respond to the bigger size */
+@media screen and (min-width: 1008px) {
+  
+    #home .banner-info h1 {
+        font-size: 5.5rem;
+        font-weight: 900;
+        color: white;
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+    
+    #home .banner-info h4 {
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: white;
+        margin-bottom: 2rem;
+        letter-spacing: 2px;
+        line-height: 25px;
+        padding-right: 24px;
+    }
+
+    .banner-photo img {
+        width: 100%;
+        height: auto;
+        opacity: 100%;
+        float: left;
+        position: relative;
+        right: 50px;
+    }
+}
