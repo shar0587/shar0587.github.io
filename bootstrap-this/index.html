@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Bootstrap This!</title>
+  </head>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Bootstrap This!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#">Here</a>
+          <a class="nav-link" href="#">is</a>
+          <a class="nav-link" href="#">a</a>
+          <a class="nav-link" href="#">Navbar</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <body>
+  <div class="container-fluid">
+    <div class="bg-primary text-white">
+      <h1 class="text-center"><strong>BOOTSTRAP THIS!</strong></h1>
+      <h2 class="text-center">BY: Sahil Sharma</h1>
+    </div>
+
+    <div class="row">
+      <h2 class="text-start"><u><strong>Brief Overview of Bootstrap</strong></u></h2>
+    </div>
+
+    <div class="row">
+      <p>Bootstrap, in a nutshell, is a toolkit combining HTML, CSS, and JavaScript elements / components for the purpose of web development. It was originally created for Twitter, and has ever since grown in popularity upon its open source release back in 2011 due to its flexible and easy-to-work-with nature. With Bootstrap, users are able to create a nice looking website much quicker in comparison to making one from scratch using HTML and CSS.</p>
+    </div>
+
+    <div class="row">
+      <h2 class="text-start"><u><strong>Some Cool Features of Bootstrap</strong></u></h2>
+    </div>
+
+    <div class="row">
+      <h4 class="text-start"><u><strong>Buttons</strong></u></h4>
+    </div>
+
+    <div class="row">
+      <p>Bootstrap allows users to make buttons by using the .btn class. <br>
+        ex) <button type="button" class="btn btn-primary">Primary</button> = "btn btn-primary" <br>
+        ex) <button type="button" class="btn btn-secondary">Secondary</button> = "btn btn-secondary" <br>
+        ex) <button type="button" class="btn btn-success">Success</button> = "btn btn-success" <br>
+        The button styles are all predefined.
+      </p>
+    </div>
+
+    <div class="row">
+      <h4 class="text-start"><u><strong>Grid System</strong></u></h4>
+    </div>
+
+    <div class="row">
+      <p>Bootstrap utilizes a 12-column system, which allows users to make a grid layout at ease using a mobile-first / responsive approach!<br>
+        ex) The following uses the system, splitting up content into 3, and giving an idea on how layouts can be made:
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              One of three columns
+            </div>
+            <div class="col-4">
+              One of three columns
+            </div>
+            <div class="col-4">
+              One of three columns
+            </div>
+          </div>
+        </div>
+      </p>
+    </div>
+
+    <div class="row">
+      <h4 class="text-start"><u><strong>Breakpoints</strong></u></h4>
+    </div>
+
+    <div class="row">
+      <p>There are 6 breakpoints in Bootstrap, which are used as media queries. They go as follows:<br>
+        <ul class="list-group">
+          <li class="list-group-item">X-Small (no class name used), less than 576px</li>
+          <li class="list-group-item">Small (sm), greater than/equal to 576px</li>
+          <li class="list-group-item">Medium (md), greater than/equal to 768px</li>
+          <li class="list-group-item">Large (lg), greater than/equal to 992px</li>
+          <li class="list-group-item">Extra Large (xl), greater than/equal to 1200px</li>
+          <li class="list-group-item">Extra Extra Large (xxl), greater than/equal to 1400px</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="row">
+      <h2 class="text-start"><u><strong>How to Get Started</strong></u></h2>
+    </div>
+
+    <div class="row">
+      <p>1. Bootstrap can be installed in 2 ways, either from bootstrap.com directly as precompiled, or by copying the source code template found on their website into your code text editor. These instructions will follow Visual Studio Code / the source code. <br>
+        2. When installed, ensure you are using the HTML5 doctype at the beginning of your document (For Visual Studio Code, simply type "!"). Ensure you have the proper meta tags + BootStrap CSS + Optional JavaScript included. <br>
+        3. Start creating your page using the various predefined tools available on Bootstrap. The great feature about Bootstrap is every element has CSS built in, meaning styling is done by Bootstrap. Visit their website for more detailed instructions on each element capability. <br>
+        4. Columns and class names are at the forefront with Bootstrap. Class names define how big the element is, what it's styled as, and so on.
+
+    </div>  
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
